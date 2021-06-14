@@ -14,3 +14,5 @@ vim.cmd[[colorscheme neon]]
 
 require('my-telescope')
 require('my-nvim-tree')
+require('my-lsp')
+require('my-nvim-compe')

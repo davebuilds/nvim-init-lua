@@ -34,5 +34,12 @@ return require('packer').startup(function()
 
   -- file tree
   use 'kyazdani42/nvim-tree.lua'
+
+  -- lsp-config: collection of common configs for neovim's built-in lsp client
+  use 'neovim/nvim-lspconfig'
+  use 'kabouzeid/nvim-lspinstall'
+
+  -- completion engine
+  use 'hrsh7th/nvim-compe'
 end)
 
