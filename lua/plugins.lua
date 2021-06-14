@@ -18,15 +18,13 @@ return require('packer').startup(function()
     requires = {{'nvim-lua/plenary.nvim'}}
   }
 
-  -- Fuzzy finder
+  -- Telescope: Fuzzy finder
   use {
     'nvim-telescope/telescope.nvim',
     requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}},
   }
-  require('telescope').setup{}
 
   use 'nvim-telescope/telescope-project.nvim'
-  require('telescope').load_extension('project')
 
   -- Editor config
   use 'editorconfig/editorconfig-vim'
