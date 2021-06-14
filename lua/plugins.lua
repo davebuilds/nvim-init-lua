@@ -31,5 +31,8 @@ return require('packer').startup(function()
 
   -- neon colorscheme
   use 'rafamadriz/neon'
+
+  -- file tree
+  use 'kyazdani42/nvim-tree.lua'
 end)
 
