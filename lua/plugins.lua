@@ -28,6 +28,9 @@ return require('packer').startup(function()
   use 'nvim-telescope/telescope-project.nvim'
   require('telescope').load_extension('project')
 
+  -- Editor config
+  use 'editorconfig/editorconfig-vim'
+
   -- neon colorscheme
   use 'rafamadriz/neon'
 end)

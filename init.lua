@@ -7,6 +7,7 @@ local utils = require('utils')  -- ./lua/utils.lua
 
 utils.opt('w', 'number', true)
 utils.opt('w', 'relativenumber', true)
+utils.opt('b', 'swapfile', false)
 
 -- place this after require('plugins') as the colorscheme come from a plugin
 vim.g.neon_style = 'dark'  --- other options: default, doom, dark
