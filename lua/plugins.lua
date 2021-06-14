@@ -24,7 +24,9 @@ return require('packer').startup(function()
     requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}},
   }
 
-  use 'nvim-telescope/telescope-project.nvim'
+  -- temporarily disable telescop-project. There was an unknown issue. 
+  -- TODO: Try to re-enable it after 06/20
+  -- use 'nvim-telescope/telescope-project.nvim'
 
   -- Editor config
   use 'editorconfig/editorconfig-vim'
