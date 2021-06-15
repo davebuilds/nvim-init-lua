@@ -1,5 +1,5 @@
 -- Map leader to space
-vim.g.mapleader = ' '
+vim.g.mapleader = '\\'
 
 require('plugins')  -- ./lua/plugins.lua
 local utils = require('utils')  -- ./lua/utils.lua
