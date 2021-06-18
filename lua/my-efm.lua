@@ -12,7 +12,7 @@ local flake8 = {
     lintFormats = {"%f:%l:%c: %m"}
 }
 
-local black = {formatCommand = "black --quiet -", formatStdin = true}
+local black = {formatCommand = "python3 -m black --quiet -", formatStdin = true}
 
 table.insert(python_arguments, flake8) 
 table.insert(python_arguments, black)

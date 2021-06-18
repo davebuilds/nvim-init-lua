@@ -43,5 +43,12 @@ return require('packer').startup(function()
 
   -- completion engine
   use 'hrsh7th/nvim-compe'
+
+  -- Treesitter
+  use {
+    'nvim-treesitter/nvim-treesitter',
+    run = ':TSUpdate'
+  }
+
 end)
 
