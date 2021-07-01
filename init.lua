@@ -2,8 +2,7 @@
 vim.g.mapleader = '\\'
 
 -- use system clipboard
--- TODO: this doesn't quite work yet, at least for SSH
-vim.o.clipboard = "unnamedplus"
+vim.cmd('set clipboard+=unnamedplus')
 
 require('plugins')  -- ./lua/plugins.lua
 local utils = require('utils')  -- ./lua/utils.lua
