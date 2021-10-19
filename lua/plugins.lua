@@ -35,7 +35,10 @@ return require('packer').startup(function()
   use 'rafamadriz/neon'
 
   -- file tree
-  use 'kyazdani42/nvim-tree.lua'
+  use {
+    'kyazdani42/nvim-tree.lua',
+    config = function() require'nvim-tree'.setup {} end,
+  }
 
   -- lsp-config: collection of common configs for neovim's built-in lsp client
   use 'neovim/nvim-lspconfig'
