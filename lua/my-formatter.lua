@@ -1,16 +1,18 @@
+local prettier = function()
+  return {
+    -- prerequisite: `npm install -g prettier`
+    exe = "prettier",
+    args = {"--stdin-filepath", vim.fn.fnameescape(vim.api.nvim_buf_get_name(0))},
+    stdin = true
+  }
+end
 require("formatter").setup(
   {
     filetype = {
-      typescript = {
-        function()
-          return {
-            -- prerequisite: `npm install -g prettier`
-            exe = "prettier",
-            args = {"--stdin-filepath", vim.fn.fnameescape(vim.api.nvim_buf_get_name(0))},
-            stdin = true
-          }
-        end
-      },
+      typescript = {prettier},
+      javascript = {prettier},
+      typescriptreact = {prettier},
+      javascriptreact = {prettier},
       lua = {
         function()
           return {
