@@ -56,5 +56,8 @@ return require('packer').startup(function()
     run = ':TSUpdate'
   }
 
+  -- formatter
+  use 'mhartington/formatter.nvim'
+
 end)
 
